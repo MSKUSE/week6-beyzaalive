@@ -1,6 +1,6 @@
 public class Point {
 
-    protected int xCoord, yCoord;
+    protected int xCoord, yCoord; // they are attribute of point class
 
     public Point(){}
 
@@ -12,5 +12,13 @@ public class Point {
     public Point(int xy){
         this.xCoord = xy;
         this.yCoord = xy;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "xCoord:" + xCoord +
+                ", yCoord:" + yCoord +
+                "}";
     }
 }
